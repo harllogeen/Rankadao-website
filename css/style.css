@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --green: #16a085;
+    --black: #444;
+    --wc-black: #0000;
+    --white: #fff;
+    --light-color: #777;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-purple: #972EA9;
+    --wc-light-blue: #000033;
+    --wc-blue: #2ea2cc;
+    --wc-primary: #810549;
+    --wc-primary-text: #fff;
+    --box-shadow: .5rem .5rem 0 rgba(111, 117, 116, 0.2);
+    --text-shadow: .4rem .4rem 0 rgba(236, 152, 152, 0.2);
+    --border: .2rem solid var(--wc-light-blue);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+#constant {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4rem 4%;
+    cursor: pointer;
+}
+
+.header {
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #000;
+}
+
+.header .mylogo img {
+    width: 200px;
+}
+
+.header .navbar a {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--wc-blue);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--wc-purple);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.about {
+    background: rgb(101, 13, 203);
+    background: linear-gradient(90deg, rgba(101, 13, 203, 1) 17%, rgba(133, 13, 170, 1) 91%, rgba(0, 212, 255, 1) 100%);
+}
+
+.about .row {
+    display: grid;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+#earn {
+    background: #ffba00;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+    position: absolute;
+    top: 40%;
+    right: -13%;
+}
+
+.about .row .image img {
+    width: 85%;
+    /* height: 90vh; */
+    border-radius: 10px;
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
+}
+
+.about .row .content h3 {
+    font-size: 7rem;
+    color: white;
+    font-weight: 3rem;
+    padding-top: 3rem;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.middle-container {
+    background: var(--white);
+}
+
+.single {
+    background: white;
+    display: flex;
+}
+
+#join h2 {
+    background: #000;
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+#container {
+    background: white;
+}
+
+.adventure .game {
+    display: grid;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.adventure .game .image {
+    flex: 1 1 45rem;
+}
+
+.adventure .game .image img {
+    width: 100%;
+    /* height: 90vh; */
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
+    border: 1rem solid var(--wc-purple);
+}
+
+.adventure .game .content h3 {
+    font-size: 6rem;
+    color: #0c0c8b;
+    font-weight: 3rem;
+    line-height: 8rem;
+}
+
+.adventure .game .content p {
+    font-size: 1.5rem;
+}
+
+#pee {
+    color: #55069e;
+    font-weight: bolder;
+}
+
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.doctors img {
+    background: rgb(205, 40, 183);
+    background: linear-gradient(90deg, rgba(205, 40, 183, 1) 17%, rgba(133, 13, 170, 1) 68%, rgba(128, 0, 255, 1) 100%);
+    width: 60%;
+    border-radius: 10px;
+}
+
+.mint .game {
+    display: grid;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.mint .game .image {
+    flex: 1 1 45rem;
+}
+
+.mint .game .image img {
+    width: 100%;
+    /* height: 90vh; */
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
+}
+
+.mint .game .content h3 {
+    font-size: 6rem;
+    color: #0c0c8b;
+    font-weight: 3rem;
+    line-height: 8rem;
+}
+
+.mint .game .content p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.9rem;
+    background: #000;
+    margin-top: 2rem;
+}
+
+.ranker .game {
+    display: grid;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.ranker .game .image {
+    flex: 1 1 45rem;
+}
+
+.ranker .game .image img {
+    width: 100%;
+    /* height: 90vh; */
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
+}
+
+.ranker .game .content h3 {
+    font-size: 6rem;
+    color: #0c0c8b;
+    font-weight: 3rem;
+    line-height: 8rem;
+}
+
+.ranker .game .content p {
+    font-size: 1.5rem;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.box img {
+    background: rgb(205, 40, 183);
+    background: linear-gradient(90deg, rgba(205, 40, 183, 1) 17%, rgba(133, 13, 170, 1) 68%, rgba(128, 0, 255, 1) 100%);
+    width: 80%;
+    border-radius: 6px;
+}
+
+#common img {
+    background: rgb(236, 232, 232);
+}
+
+#content {
+    line-height: 3rem;
+}
+
+#content h3 {
+    color: #0c0c8b;
+}
+
+.friends .collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.friends .collection img {
+    width: 60%;
+}
+
+.friends h1 {
+    font-size: 7rem;
+    text-align: center;
+    color: #0c0c8b;
+    text-shadow: var(--text-shadow)
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer .box-container .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: rgb(235, 195, 20);
+}
+
+.footer .box-container .box a:hover i {
+    padding: 1rem;
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    border-top: .2rem solid rgba(228, 206, 13, 0.1);
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+        color: rgb(4, 28, 63);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 100%;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+        text-align: center;
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .5s ease-out;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+        color: var(--wc-light-blue);
+    }
+    .header .navbar a.active {
+        padding: unset;
+    }
+}
+
+@media (max-width:425px) {
+    section {
+        display: block;
+    }
+    .row {
+        display: block;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .doctors img {
+        width: 100%;
+    }
+    .box img {
+        width: 100%;
+    }
+}
